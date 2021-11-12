@@ -2,13 +2,13 @@ import { useState } from 'react';
 import UserForm from './components/UserFrom/UserForm';
 import UsersList from './components/UsersList/UsersList';
 
-const App = () => {
+const App: React.FC = (): JSX.Element => {
   const [users, setUsers] = useState([{ 
     id: 1, 
     name: 'Mayya'
   }]);
 
-  const handleUserFormSubmit = (userName: string) => {
+  const handleUserFormSubmit = (userName: string): void => {
     setUsers([...users, { 
       id: users.length + 1, 
       name: userName

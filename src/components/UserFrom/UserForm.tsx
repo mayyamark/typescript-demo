@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Form from '../Form/Form';
 
 // Declaring an interface for the types

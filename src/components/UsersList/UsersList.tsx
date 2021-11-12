@@ -4,7 +4,7 @@ interface UserInfo {
 }
 
 interface Props {
-  users: UserInfo[];  
+  users: UserInfo[]; // string[] 
 }
 
 const UsersList: React.FC<Props> = ({ users }): JSX.Element => {
