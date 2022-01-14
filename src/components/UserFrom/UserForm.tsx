@@ -15,7 +15,7 @@ const UserForm = ({ onSubmit }: { onSubmit: (userName: string) => void}): JSX.El
     setUserName(event.target.value);
   };
 
-  const handleFormSubmit = (event: React.SyntheticEvent): void => {
+  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     onSubmit(userName);
     setUserName('');

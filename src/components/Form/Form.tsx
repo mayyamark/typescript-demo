@@ -10,7 +10,7 @@ interface Props {
   isButtonDisabled?: boolean; // Optional prop
   formTitle: string;
   inputFields: InputField[];
-  onSubmit: (event: React.SyntheticEvent) => void;
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 }
 
 const Form: React.FC<Props> = ({ 
