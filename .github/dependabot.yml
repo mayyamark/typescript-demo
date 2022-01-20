@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      # interval: "weekly" # Change to "weekly", when the current alerts are closed
+      # day: "tuesday"
+      time: "14:30"
+      timezone: "UTC"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "mayyamark"
